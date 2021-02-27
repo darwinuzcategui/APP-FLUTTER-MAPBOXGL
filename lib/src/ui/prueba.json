@@ -1,0 +1,123 @@
+[
+{
+        "image": "https://supermayoristavital.com.ar/images/stores/img10_3UlbDyOxWW.jpg",
+        "locality": {
+            "zipcode": 1427,
+            "updated_datetime": "2018-01-24 22:52:10",
+            "street": "Tronador 400",
+            "locality": {
+                "zone": {
+                    "province": {
+                        "country": {
+                            "updated_datetime": "2018-01-12 00:47:37",
+                            "name": "Argentina",
+                            "id": 2,
+                            "created_datetime": "2018-01-12 00:47:37"
+                        },
+                        "updated_datetime": "2018-01-12 00:48:07",
+                        "name": "Buenos Aires",
+                        "id": 2,
+                        "created_datetime": "2018-01-12 00:48:07"
+                    },
+                    "updated_datetime": "2018-01-24 20:59:20",
+                    "name": "C.A.B.A.",
+                    "id": 6,
+                    "created_datetime": "2018-01-24 20:59:20"
+                },
+                "updated_datetime": "2018-01-24 20:59:39",
+                "name": "Villa Ortúzar",
+                "id": 12,
+                "created_datetime": "2018-01-24 20:59:39"
+            },
+            "id": 11,
+            "created_datetime": "2018-01-24 22:52:10"
+        },
+        "updated_datetime": "2020-01-29 10:39:51",
+        "latitude": "-34.5869572",
+        "name": "Villa Ortuzar",
+        "phone_number": "011 4553-6700",
+        "id": 10,
+        "open_hours": [
+            {
+                "updated_datetime": "2020-05-15 18:02:26",
+                "weekday_from": "Lunes",
+                "weekday_to": "Sabado",
+                "id": 13,
+                "created_datetime": "2018-01-24 22:54:15",
+                "hour_from": "08:00",
+                "hour_to": "20:00"
+            },
+            {
+                "updated_datetime": "2021-01-06 13:56:03",
+                "weekday_from": "Domingo",
+                "weekday_to": "Domingo",
+                "id": 58,
+                "created_datetime": "2020-06-22 17:03:44",
+                "hour_from": "10:00",
+                "hour_to": "18:00"
+            }
+        ],
+        "special_description": [],
+        "created_datetime": "-0001-11-30 00:00:00",
+        "longitude": "-58.4682329",
+        "y_de_paso": true,
+        "tiene_pago_facil": true,
+        "tiene_atm": true
+    },
+    {
+        "image": "https://supermayoristavital.com.ar/images/stores/img14_V46dJVK4ER.jpg",
+        "locality": {
+            "zipcode": 1657,
+            "updated_datetime": "2018-01-24 23:14:38",
+            "street": " Av. Bernabé Márquez 969",
+            "locality": {
+                "zone": {
+                    "province": {
+                        "country": {
+                            "updated_datetime": "2018-01-12 00:47:37",
+                            "name": "Argentina",
+                            "id": 2,
+                            "created_datetime": "2018-01-12 00:47:37"
+                        },
+                        "updated_datetime": "2018-01-12 00:48:07",
+                        "name": "Buenos Aires",
+                        "id": 2,
+                        "created_datetime": "2018-01-12 00:48:07"
+                    },
+                    "updated_datetime": "2018-01-12 00:53:21",
+                    "name": "Zona Oeste",
+                    "id": 4,
+                    "created_datetime": "2018-01-12 00:53:21"
+                },
+                "updated_datetime": "2018-01-24 21:04:17",
+                "name": "Loma Hermosa",
+                "id": 15,
+                "created_datetime": "2018-01-24 21:04:17"
+            },
+            "id": 15,
+            "created_datetime": "2018-01-24 23:14:38"
+        },
+        "updated_datetime": "2020-01-29 10:37:40",
+        "latitude": "-34.5708554",
+        "name": "Loma Hermosa",
+        "phone_number": "011 4008-8888",
+        "id": 14,
+        "open_hours": [
+            {
+                "updated_datetime": "2020-10-01 08:46:49",
+                "weekday_from": "Lunes",
+                "weekday_to": "Sabado",
+                "id": 53,
+                "created_datetime": "2019-11-30 22:33:41",
+                "hour_from": "08:00",
+                "hour_to": "20:00"
+            }
+        ],
+        "special_description": [],
+        "created_datetime": "-0001-11-30 00:00:00",
+        "longitude": "-58.5943278",
+        "y_de_paso": true,
+        "tiene_pago_facil": true,
+        "tiene_atm": true
+    }
+]

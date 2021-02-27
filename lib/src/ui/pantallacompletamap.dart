@@ -15,7 +15,7 @@ class PantallaFullMap extends StatefulWidget {
 class _PantallaFullMapState extends State<PantallaFullMap> {
   MapboxMapController mapController;
   final center = LatLng(10.595120, -67.045467);
-  String colorSelecionado = "#000033";
+  String colorSelecionado = "#FFB300";
   String seleccionEstilo =
       "mapbox://styles/darwinuzcategui/cklk8ydqc1if817l5g15gu39f";
   final oscuroEstilo =
@@ -34,7 +34,7 @@ class _PantallaFullMapState extends State<PantallaFullMap> {
   // metodo para cargar
 
   void _onStyleLoaded() {
-    addImageFromAsset("assetImage", "assets/custom-icon.png");
+    addImageFromAsset("assetImage", "assets/gmd.ico");
     addImageFromUrl(
         "networkImage", Uri.parse("https://via.placeholder.com/50"));
   }
@@ -67,7 +67,16 @@ class _PantallaFullMapState extends State<PantallaFullMap> {
         // Simbolos
         FloatingActionButton(
             child: Icon(Icons.settings_system_daydream_rounded),
+            backgroundColor: Colors.orangeAccent,
             onPressed: () {
+              mapController.addSymbol(SymbolOptions(
+                  geometry: center,
+                  // iconSize: 1,
+                  //iconImage: "attraction-15",
+                  iconImage: 'assetImage',
+                  textField: 'MI CASA ',
+                  textOffset: Offset(0, 5),
+                  textColor: colorSelecionado));
               if (seleccionEstilo == oscuroEstilo) {
                 //seleccionEstilo = callesEstilo;
                 colorSelecionado = colorCalle;
@@ -75,14 +84,10 @@ class _PantallaFullMapState extends State<PantallaFullMap> {
                 // seleccionEstilo = oscuroEstilo;
                 colorSelecionado = colorOscuro;
               }
-              mapController.addSymbol(SymbolOptions(
-                  geometry: center,
-                  //iconSize: 3,
-                  //iconImage: "attraction-15",
-                  iconImage: 'assetImage',
-                  textField: 'SIMBOLO DARWIN',
-                  textOffset: Offset(0, 2),
-                  textColor: colorSelecionado));
+              print(colorOscuro + " color selecionado *** " + colorSelecionado);
+              setState(() {
+                _onStyleLoaded();
+              });
             }),
         SizedBox(
           height: 5,
@@ -91,6 +96,7 @@ class _PantallaFullMapState extends State<PantallaFullMap> {
         // ZoomIn Acercar
         FloatingActionButton(
             child: Icon(Icons.zoom_in),
+            backgroundColor: Colors.orangeAccent,
             onPressed: () {
               //mapController.animateCamera(CameraUpdate.tiltTo(85)); // par inclinacion
               mapController.animateCamera(CameraUpdate.zoomIn());
@@ -101,6 +107,7 @@ class _PantallaFullMapState extends State<PantallaFullMap> {
         // ZoomOut Alejar
         FloatingActionButton(
             child: Icon(Icons.zoom_out),
+            backgroundColor: Colors.orangeAccent,
             onPressed: () {
               //mapController.animateCamera(CameraUpdate.tiltTo(85)); // par inclinacion
               mapController.animateCamera(CameraUpdate.zoomOut());
@@ -112,6 +119,7 @@ class _PantallaFullMapState extends State<PantallaFullMap> {
         // cambiar Estilos
         FloatingActionButton(
             child: Icon(Icons.add_box_outlined),
+            backgroundColor: Colors.orangeAccent,
             onPressed: () {
               if (seleccionEstilo == oscuroEstilo) {
                 seleccionEstilo = callesEstilo;
@@ -120,8 +128,10 @@ class _PantallaFullMapState extends State<PantallaFullMap> {
                 seleccionEstilo = oscuroEstilo;
                 colorSelecionado = colorOscuro;
               }
-              _onStyleLoaded();
-              setState(() {});
+
+              setState(() {
+                _onStyleLoaded();
+              });
             })
       ],
     );
